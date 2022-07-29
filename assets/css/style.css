@@ -1,5 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
+/* Body */
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Container */
+.container-fluid {
+    padding: 0;
+}
+
+/* Header */
+.background-head {
+    height: 650px;
+
+    background-image: url('/assets/images/background-head-1.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+.head-title {
+    padding-bottom: 150px;
+}
+
+.background-head p {
+    font-size: 20px;
+}
+
+/* Header Search Bar */
+.search-bar {
+    padding: 0 15px;
+}
+
+.select-bar {
+    padding: 5px;
+}
+
+#starting-date {
+    margin: 10px 0;
+}
+
+.button-search-bar {
+    padding: 10px 0;
+}
+
+.button-search-bar a {
+    text-decoration: none;
+}
+
+/* Main */
+.main-cars {
+    padding: 20px 0 50px 0;
+    border-bottom: 1px solid rgb(230, 230, 230);
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#price-filter {
+    width: 140px;
+}
+
+.caroussel {
+    display: flex;
+    align-items: center;
+}
+
+.caroussel i:hover{
+    cursor: pointer;
+}
+
+.main-cars select {
+    justify-self: end;
+}
+
+.infos-cars {
+    display: grid;
+}
+
+.infos-cars h3, .infos-cars p {
+    display: none;
+}
+
+.infos-cars button {
+    width: 150px;
+
+    align-self: center;
+    justify-self: end;
+}
+
+@media screen and (min-width: 640px) {
+
+    /* Header Search Bar */
+    .head-title {
+        padding-bottom: 350px;
+    }
+
+    .search-bar {
+        padding: 0 64px;
+    }
+
+    .select-bar {
+        display: flex;
+    }
+
+    #starting-date {
+        margin: 0 15px;
+    }
+
+}
+
+@media screen and (min-width: 1080px) {
+
+    /* Header Search Bar */
+    .search-bar {
+        display: flex;
+        justify-content: center;
+    }
+
+    #starting-date {
+        margin: 0 48px;
+    }
+
+    #ending-date {
+        margin-right: 48px;
+    }
+
+    .button-search-bar a {
+        padding: 0 48px;
+    }
+
+    /* Main Cars */
+    .main-cars {
+        margin: 0 auto;
+        max-width: 1080px;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .infos-cars h3, .infos-cars p{
+        display: inline-block;
+    }
+
+    .infos-cars button {
+        justify-self: start;
+    }
 }

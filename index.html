@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sixt | Location de voitures 24h/24 et 7j/7</title>
+        <title>Location de voitures 24h/24 et 7j/7</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="/assets/css/reset.css">
         <link rel="stylesheet" href="/assets/css/bootstrap-5.2.0/bootstrap.min.css">
@@ -13,9 +13,127 @@
 
     <body>
 
-        <h1>Heading 1</h1>
+        <!-- Container Header -->
+        <div class="container-fluid">
+            
+            <!-- Header -->
+            <header class="mb-3">
+
+                <!-- Background Header -->
+                <div class="background-head text-center">
+
+                    <!-- Burger -->
+                    <div class="pos-f-t">
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="bg-dark p-4">
+                                <h5 class="text-white h4">Collapsed content</h5>
+                                <span class="text-muted">Toggleable via the navbar brand.</span>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-dark justify-content-end p-2">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </nav>
+                    </div>
+
+                    <!-- Titres -->
+                    <div class="head-title text-light">
+                        <h1>Bienvenue à bord</h1>
+                        <p>Location de voiture 24h/24 et 7j/7</p>
+                    </div>
+
+                    <!-- Search bar -->
+                    <div class="search-bar">
+                        <div class="bg-light bg-opacity-75">
+                            <div class="select-bar">
+                                <select id="address-select" class="form-select slct">
+                                    <option>Adresse de départ</option>
+                                    <option>1er arrondissement</option>
+                                    <option>2ème arrondissement</option>
+                                </select>
+                                <input type="date" id="starting-date" class="form-select slct">
+                                <input type="date"  id="ending-date" class="form-select slct">
+                            </div>
+                        </div>
+                        <div class="button-search-bar bg-success bg-opacity-75">
+                            <a class="text-white">Valider ma recherche</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </header>
+
+        </div>
+
+        <!-- Container Main -->
+        <div class="container">
+
+            <!-- Main -->
+            <div class="main-cars">
+                <h2><strong>7</strong> résultats</h2>
+                <select id="price-filter" class="form-select rounded">
+                    <option>Prix croissant</option>
+                </select>
+                <div class="caroussel">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <img src="/assets/images/vehicule1.png" alt="black car" class="img-fluid">
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+                <div class="infos-cars">
+                    <h3>Peugeot 208</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire),</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button class="btn btn-success rounded border-secondary border-opacity-25">Réserver et payer</button>
+                </div>
+            </div>
+            
+            <div class="main-cars">
+                <div class="caroussel">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <img src="/assets/images/vehicule2.png" alt="black car" class="img-fluid">
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+                <div class="infos-cars">
+                    <h3>Ford Focus</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire),</p>
+                    <p>999 €</p>
+                    <button class="btn btn-success rounded border-secondary border-opacity-25">Réserver et payer</button>
+                </div>
+            </div>
+
+            <div class="main-cars">
+                <div class="caroussel">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <img src="/assets/images/vehicule3.png" alt="black car" class="img-fluid">
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+                <div class="infos-cars">
+                    <h3>Audi A1</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire),</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button class="btn btn-success rounded border-secondary border-opacity-25">Réserver et payer</button>
+                </div>
+            </div>
+
+            <div class="main-cars">
+                <div class="caroussel">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <img src="/assets/images/vehicule4.png" alt="black car" class="img-fluid">
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+                <div class="infos-cars">
+                    <h3>Opel Mokka</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire),</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button class="btn btn-success rounded border-secondary border-opacity-25">Réserver et payer</button>
+                </div>
+            </div>
+
+        </div>
 
         <script src="/assets/js/script.js"></script>
-        
+
     </body>
 </html>
