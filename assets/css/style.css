@@ -23,7 +23,7 @@ h2 {
 .background-head {
     height: 650px;
 
-    background-image: url('/assets/images/background-head-1.jpg');
+    background-image: url('../images/background-head-1.jpg');
     background-size: cover;
     background-position: left;
 }

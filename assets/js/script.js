@@ -18,18 +18,18 @@ let image = document.querySelector('.background-head');
 let imagesArray = ['background-head-1', 'background-head-2', 'background-head-3'];
 
 // Init un index
-let index = 1;
+let i = 1;
 
 // Déclenche une fonction toutes les 15 secondes qui changera l'image
-setInterval(changeImage, 15000);
+setInterval(changeImage, 600);
 
 function changeImage() {
 
-    image.style.backgroundImage = `url(/assets/images/${imagesArray[index]}.jpg`;
-    index++;
+    image.style.backgroundImage = `url(../images/${imagesArray[i]}.jpg`;
+    i++;
 
-    if (index == imagesArray.length) {
-        index = 1;
+    if (i == imagesArray.length) {
+        i = 1;
     }
 
 }
