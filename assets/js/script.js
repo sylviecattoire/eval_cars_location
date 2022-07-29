@@ -21,7 +21,7 @@ let imagesArray = ['background-head-1', 'background-head-2', 'background-head-3'
 let index = 1;
 
 // Déclenche une fonction toutes les 15 secondes qui changera l'image
-setInterval(changeImage, 600);
+setInterval(changeImage, 15000);
 
 function changeImage() {
 
